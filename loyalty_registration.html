@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loyalty registration</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/1d11a9d54d.js"></script>
+    <link rel="stylesheet" href="loyalty-registration/loyalty-registration.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poetsen+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="home/logo.png" alt="Company Logo">
+                </div>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li class="dropdown">
+                        <a href="products.html"><i class="fas fa-box"></i> Products</a>
+                        <div class="dropdown-content">
+                            <a href="dairy.html"><i class="fas fa-cheese"></i> Dairy</a>
+                            <a href="vegetables.html"><i class="fas fa-carrot"></i> Vegetables</a>
+                            <a href="cosmetics.html"><i class="fas fa-magic"></i> Cosmetics and Skin Care</a>
+                        </div>
+                    </li>
+                    <li><a href="order.html"><i class="fas fa-shopping-cart"></i> Order</a></li>
+                    <li><a href="loyalty_registration.html"><i class="fas fa-user"></i> Loyalty Registration</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="loyalty-registration">
+        <h2>Loyalty Registration</h2>
+        <form id="loyaltyForm">
+            <section class="form-section">
+                <h3>Personal Details</h3>
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobileNumber">Mobile Number</label>
+                    <input type="tel" id="mobileNumber" name="mobileNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <input type="text" id="gender" name="gender" required>
+                </div>
+                <div class="form-group">
+                    <label for="occupation">Occupation</label>
+                    <input type="text" id="occupation" name="occupation" required>
+                </div>
+            </section>
+    
+            <section class="form-section">
+                <h3>Identity Details</h3>
+                <div class="form-group">
+                    <label for="idType">ID Type</label>
+                    <input type="text" id="idType" name="idType" required>
+                </div>
+                <div class="form-group">
+                    <label for="idNumber">ID Number</label>
+                    <input type="text" id="idNumber" name="idNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="issueState">Issued State</label>
+                    <input type="text" id="issueState" name="issueState" required>
+                </div>
+                <div class="form-group">
+                    <label for="issueAuthority">Issue Authority</label>
+                    <input type="text" id="issueAuthority" name="issueAuthority" required>
+                </div>
+                <div class="form-group">
+                    <label for="issueDate">Issued Date</label>
+                    <input type="date" id="issueDate" name="issueDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="expiryDate">Expiry Date</label>
+                    <input type="date" id="expiryDate" name="expiryDate" required>
+                </div>
+            </section>
+    
+            <section class="form-section">
+                <h3>Loyalty Scheme</h3>
+                <div class="form-group">
+                    <label for="loyaltyScheme">Select a Scheme</label>
+                    <select id="loyaltyScheme" name="loyaltyScheme" required>
+                        <option value="">Select a scheme</option>
+                        <option value="basic">Basic</option>
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>
+                        <option value="platinum">Platinum</option>
+                    </select>
+                </div>
+                <div class="benefits">
+                    <div class="scheme">
+                        <h4>Basic</h4>
+                        <p>5% discount on all purchases.</p>
+                    </div>
+                    <div class="scheme">
+                        <h4>Silver</h4>
+                        <p>10% discount on all purchases, and access to member-only sales.</p>
+                    </div>
+                    <div class="scheme">
+                        <h4>Gold</h4>
+                        <p>15% discount, access to member-only sales, and free delivery.</p>
+                    </div>
+                    <div class="scheme">
+                        <h4>Platinum</h4>
+                        <p>20% discount, access to member-only sales, free delivery, and priority customer service.</p>
+                    </div>
+                </div>
+            </section>
+    
+            <div class="submit-btn">
+                <button type="submit">Next</button>
+            </div>
+        </form>
+    </section>
+    
+
+
+
+
+
+</body>
+
+</html>

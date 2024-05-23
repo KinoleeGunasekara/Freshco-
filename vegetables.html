@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://kit.fontawesome.com/1d11a9d54d.js"></script>
+    <link rel="stylesheet" href="vegetables/vegetable.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poetsen+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <img src="home/logo.png" alt="Company Logo">
+                </div>
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <ul class="nav-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li class="dropdown">
+                        <a href="products.html"><i class="fas fa-box"></i> Products</a>
+                        <div class="dropdown-content">
+                            <a href="dairy.html"><i class="fas fa-cheese"></i> Dairy</a>
+                            <a href="vegetables.html"><i class="fas fa-carrot"></i> Vegetables</a>
+                            <a href="cosmetics.html"><i class="fas fa-magic"></i> Cosmetics and Skin Care</a>
+                        </div>
+                    </li>
+                    <li><a href="order.html"><i class="fas fa-shopping-cart"></i> Order</a></li>
+                    <li><a href="loyalty_registration.html"><i class="fas fa-user"></i> Loyalty Registration</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+     <section class="vegetable-banner">
+        <h1>Vegetables</h1>
+     </section>
+
+    <section class="venue-container">
+        <input type="radio" name="common" id="btn1" checked>
+        <input type="radio" name="common" id="btn2">
+        <input type="radio" name="common" id="btn3">
+        
+        <div class="slides">
+            <div class="image-slide">
+                <div class="slide-container first">
+                    <h1 class="venue">From where we provide fresh vegetables?</h1>
+                    <h2 class="slide-title">Organic Oasis Farm</h2>
+                    <div class="slide-content">
+                        <div class="slide-image">
+                            <img src="vegetables/venue1.jpg" alt="venue 1">
+                        </div>
+                        <div class="slide-text">
+                            <p>Step into the lush greenery of Organic Oasis Farm, where each vegetable is nurtured
+                                with care under the open sky and without synthetic pesticides. Here, you'll find a vibrant
+                                array of organic delights, freshly harvested and bursting with flavor. From crisp carrots to tender
+                                spinach, every vegetable reflects our commitment to sustainable farming practices and the pure
+                                essence of nature</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-slide">
+                <div class="slide-container">
+                    <h2 class="slide-title">Heirloom Harvest Haven</h2>
+                    <div class="slide-content">
+                        <div class="slide-image">
+                            <img src="vegetables/venue2.jpg" alt="venue 2">
+                        </div>
+                        <div class="slide-text">
+                            <p>Our farm has been cultivating heirloom varieties for generations, preserving the rich
+                                flavors and unique characteristics that make each vegetable truly exceptional. Wander through our fields
+                                and discover a bounty of heritage tomatoes, kaleidoscopic peppers, and ancient grains, each telling a
+                                story of time-honored cultivation and culinary heritage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-slide">
+                <div class="slide-container">
+                    <h2 class="slide-title">Urban Garden Groove</h2>
+                    <div class="slide-content">
+                        <div class="slide-image">
+                            <img src="vegetables/venue3.jpg" alt="venue 3">
+                        </div>
+                        <div class="slide-text">
+                            <p>Dive into the vibrant energy of Urban Garden Groove, where concrete jungles give way
+                                to lush green oases in unexpected places. Our rooftop gardens and vertical farms bring fresh
+                                produce to the heart of the city, delivering a kaleidoscope of flavors to urban dwellers year-round. From
+                                crisp lettuce to juicy tomatoes, our locally sourced vegetables are as fresh as the morning dew,
+                                harvested just moments before they find their way to your plate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navigator">
+            <label for="btn1" class="bar"></label>
+            <label for="btn2" class="bar"></label>
+            <label for="btn3" class="bar"></label>
+        </div>
+    </section>
+
+
+    <section class="banner">
+        <img src="vegetables/banner.jpg" alt="vegetable-banner">
+    </section>
+
+
+        <section class="vegetable-container">
+            <div class="vegetable-grid">
+                <div class="vegetable-item">
+                    <img src="vegetables/tomato.png" alt="Vegetable 1">
+                    <h3>Tomatoes </h3>
+                    <p>Rs.90</p>
+                    <input type="number" min="1" value="1">
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="vegetable-item">
+                    <img src="vegetables/carrot.png" alt="Vegetable 2">
+                    <h3>Carrots</h3>
+                    <p>Rs.120</p>
+                    <input type="number" min="1" value="1">
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="vegetable-item">
+                    <img src="vegetables/brocolli.png" alt="Vegetable 3">
+                    <h3>Broccoli</h3>
+                    <p>Rs.100</p>
+                    <input type="number" min="1" value="1">
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="vegetable-item">
+                    <img src="vegetables/spinach.png" alt="Vegetable 4">
+                    <h3>Spinach</h3>
+                    <p>Rs.70</p>
+                    <input type="number" min="1" value="1">
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="vegetable-item">
+                    <img src="vegetables/potato.png" alt="Vegetable 5">
+                    <h3>Potatoes</h3>
+                    <p>Rs.120</p>
+                    <input type="number" min="1" value="1">
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="vegetable-item">
+                    <img src="vegetables/brinjal.png" alt="Vegetable 6">
+                    <h3>Brinjal</h3>
+                    <p>Rs.85</p>
+                    <input type="number" min="1" value="1">
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="vegetable-item">
+                    <img src="vegetables/cucumber.png" alt="Vegetable 7">
+                    <h3>Cucumbers</h3>
+                    <p>Rs.150</p>
+                    <input type="number" min="1" value="1">
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="vegetable-item">
+                    <img src="vegetables/onion.png" alt="Vegetable 8">
+                    <h3>Onions</h3>
+                    <p>Rs.80</p>
+                    <input type="number" min="1" value="1">
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+
+    </section>
+
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <div class="logo-image">
+                    <img src="home/logo.png" alt="logo">
+                </div>
+                <p>FRESHCO offers a diverse range of high-quality groceries and household essentials, prioritizing
+                    exceptional service and community engagement.</p>
+            </div>
+
+            <div class="col">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li><i class="material-icons">location_on</i> Main Street, Kandy, Sri Lanka</li>
+                    <li><i class="material-icons">phone</i> 071 456-7890</li>
+                    <li><i class="material-icons">email</i> freshco@gmail.com</li>
+                    <li><i class="material-icons">access_time</i> Mon - Fri: 9:00 AM - 9:00 PM</li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="order.html">order</a></li>
+                    <li><a href="loyalty_registration.html">loyalty registration</a></li>
+
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter Sign-up</h3>
+                <form>
+                    <div class="envelop-img">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <input type="email" placeholder="Enter your email ID" required>
+                    <div class="footer-btn">
+                        <button type="submit"><i class="fa-solid fa-arrow-right"></i> </button>
+                    </div>
+                </form>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-twitter"></i>
+                    <i class="fa-brands fa-square-whatsapp"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 FRESHCO. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
+    
+
+
+    
